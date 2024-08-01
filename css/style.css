@@ -1,0 +1,75 @@
+/* 文章内链接 */
+li:not([class]) a:not([class]),
+p:not([class]) a:not([class]),
+table a:not([class]) {
+  /*color: var(--theme-link);*/
+  padding-bottom: 3px; /* 增加底部padding */
+  padding-right: 1px;
+  margin-right: 2px;
+  background: linear-gradient(0, var(--theme-link), var(--theme-link)) no-repeat center bottom / 100% 2px;
+}
+
+/* 运行时间 */
+.runtime
+{
+    font-weight: bold;
+    color: #7F84A7;
+}
+
+
+
+/* 美化滚动条 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 6px;
+  background: rgba(#101F1C, 0.1);
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144,147,153,.5);
+  background-clip: padding-box;
+  min-height: 28px;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144,147,153,.3);
+}
+
+/* 选中文本：使用超链接高亮的背景色 */
+::selection {
+  background: var(--theme-link-opa);
+}
+
+/* 默认的浅色模式颜色 */
+:root {
+  --tag-bg-color: #F2EEFD;
+  --tag-text-color: #835EEC;
+}
+
+/* 暗黑模式下的颜色 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tag-bg-color: #282433;
+    --tag-text-color: #A28BF2;
+  }
+}
+
+
+@font-face{
+  font-family: 'LXGW WenKai'
+  font-weight: normal
+  font-style: normal
+}
+
